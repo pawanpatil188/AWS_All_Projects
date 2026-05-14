@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi Tier App</title>
+</head>
+<body>
+    <h1>Multi-Tier App</h1>
+    <p id="data">Loading backend data...</p>
+
+    <script>
+        fetch("http://13.206.121.168/-IP:5000")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("data").innerText = data;
+        })
+        .catch(err => {
+            document.getElementById("data").innerText = "Backend not reachable";
+        });
+    </script>
+</body>
+</html>
