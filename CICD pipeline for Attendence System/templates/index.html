@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance</title>
+</head>
+<body>
+    <h2>Mark Attendance</h2>
+    <form method="POST" action="/mark">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <button type="submit">Mark</button>
+    </form>
+
+    <h2>Attendance Records</h2>
+    <table border="1">
+        {% for row in data %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

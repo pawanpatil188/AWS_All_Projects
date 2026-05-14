@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - pip install flask
+
+  build:
+    commands:
+      - echo "Build completed"
+
+  post_build:
+    commands:
+      - echo "Deploying to EC2"
