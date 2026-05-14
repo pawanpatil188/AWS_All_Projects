@@ -1,0 +1,12 @@
+{
+  "name": "cicd-nodejs-app",
+  "version": "1.0.0",
+  "description": "Simple Node.js app for CI/CD pipeline",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {}
+}
